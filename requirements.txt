@@ -1,0 +1,7 @@
+torch
+matplotlib
+ultralytics
+grad-cam
+pytorch-gradcam
+opencv-python
+pillow
