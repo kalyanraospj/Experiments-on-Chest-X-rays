@@ -7,8 +7,18 @@ from torchvision.models.detection import fasterrcnn_resnet50_fpn
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import numpy as np
-from preprocessing import apply_clahe
 from grad_cam.fast_rcnn import get_grad_cam
+import cv2
+
+
+def apply_clahe(image):
+    image = np.array(image)
+    """Apply CLAHE to enhance X-ray image contrast."""
+    if len(image.shape) == 3:
+        image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    clahe = cv2.createCLAHE(clipLimit=5.0, tileGridSize=(8, 8))
+    enhanced_image = clahe.apply(image)
+    return enhanced_image
 
 
 # Load the pre-trained Faster R-CNN model
