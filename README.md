@@ -156,6 +156,7 @@ The objective of this experiment was to train a Faster R-CNN model for detecting
 
 
 ## Model Metrics
+From here you can download model wights from [here](https://drive.google.com/file/d/1-aKbC3aBmTaQUia9ad6_taebUeH9Uo2T/view?usp=share_link)
 
 ```
                   Class    Images  Instances       P          R         mAP50     mAP50-95
