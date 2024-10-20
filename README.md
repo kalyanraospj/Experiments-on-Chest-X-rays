@@ -155,7 +155,7 @@ The objective of this experiment was to train a Faster R-CNN model for detecting
    - **Grad-CAM (Gradient-weighted Class Activation Mapping)** was applied to visualize the regions in the X-ray images where the model focused when detecting pathologies. This helped in understanding model behavior and interpreting its predictions.
 
 
-## Mogel Metrics
+## Model Metrics
 
 ```
                   Class    Images  Instances       P          R         mAP50     mAP50-95
